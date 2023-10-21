@@ -28,6 +28,7 @@ html {
   justify-content: center;
   align-items: center;
   height: 100vh;
+  margin: 0px 400px 0px 400px;
 }
 
 .container-fluid {
@@ -41,9 +42,14 @@ html {
   width: 50%;
   font-family: var(--Family);
   padding: 10px;
+  width: 100%;
 }
 
-.formIdade {
+.form-idade {
+  width: 70%;
+}
+
+.age-container {
   display: flex;
   flex-direction: row;
 }
@@ -53,14 +59,14 @@ html {
 .year {
   display: flex;
   flex-direction: column;
-  margin: 5px;
+  margin: 15px;
 }
 
 .inputsValores {
   border: 1px var(--Off-black) solid;
   border-radius: 10px;
   padding: 10px;
-  width: 75%;
+  width: 85%;
   font-weight: bolder;
   font-size: x-large;
   cursor: pointer;
@@ -77,14 +83,56 @@ input[type="number"] {
   --moz-appearance: textfield;
 }
 
+.btn-container {
+  display: flex;
+  justify-content: end;
+  margin: 0px 30px 0px 30px;
+}
+
 .btnFlecha {
+  background-color: var(--Off-black);
   border: none;
   border-radius: 50%;
   cursor: pointer;
+  width: 70px;
+  height: 70px;
+}
+
+.btnFlecha:hover {
+  background-color: var(--Purple);
 }
 
 .flecha {
-  background-color: var(--Off-black);
   border-radius: 50%;
-  width: 60px;
+  width: 35px;
+}
+
+.msg-container,
+#msg-result {
+  height: 35vh;
+}
+
+.msg-year,
+.msg-moths,
+.msg-days {
+  font-family: var(--Family);
+  font-weight: 900;
+  font-style: italic;
+  font-size: 45px;
+  display: flex;
+  align-items: center;
+}
+
+.text {
+  margin: 0;
+  margin-right: 5px;
+  color: var(--Purple);
+}
+
+.attribution {
+  font-family: var(--Family);
+}
+
+::selection {
+  background-color: var(--Light-red);
 }
